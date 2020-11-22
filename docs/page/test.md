@@ -32,22 +32,22 @@ SET overrideArchive "0"
    
    点击下图红圈位置打开**技能图标**。
    
-   ![An image](./test/death_strike_detail.png)
+   ![death_strike_detail](./test/death_strike_detail.png)
    
    点击下图红圈位置打开**技能图标原图**。
    
-   ![An image](./test/death_strike_original.png)
+   ![death_strike_original](./test/death_strike_original.png)
    
    点击鼠标右键，选择**图片另存为**，保存该图片。
    
-   ![An image](./test/save_image.png)
+   ![death_strike_original](./test/save_image.png)
    
 
 2. 将图片文件格式转换为blp。(此处介绍用**BLPNG Converter**转换的方法，也可以用其他方式转换)
 
    打开图片格式转换工具**BLPNG Converter**，将下载的图片拖到红圈位置，转换就会自动开始。
    
-   ![An image](./test/blpng.png)
+   ![blpng](./test/blpng.png)
    
    提示转换完成之后会在**与图片相同的路径下**生成blp文件。
 
