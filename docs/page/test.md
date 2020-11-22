@@ -1,56 +1,59 @@
 # 反和谐
 
+反和谐分为**模型反和谐**和**图标反和谐**两部分。
+
 ## 模型反和谐
-在**Config.wtf**文件的最后加上如下语句。
+
+模型反和谐是指还原游戏中的模型，比如亡灵还原为骷髅，尸体的墓碑还原为骷髅。
+
+方法如下：
+
+用记事本打开**Config.wtf**文件，在最后加上如下语句。
 ```
 SET overrideArchive "0"
 ```
 **Config.wtf**文件路径为**World of Warcraft/retail/WTF/Config.wtf**。
 
 ## 图标反和谐
-WOW支持自定义图标，所以可以通过设置自定义图标图片来手动反和谐。
-操作流程如下（以DK的技能**灵界打击**为例）：
 
-1. 下载原版图标。
+图标反和谐是指将物品和技能的图标还原，比如还原DK灵界打击的图标。
 
-   从该[链接](https://wowwiki.fandom.com/wiki/Category:Abilities)下载。
-   
-   若知道技能英文名称，直接在顶部搜索框中搜索技能的英文名称，如灵界打击为**Death Strike**，之后进入相应技能页面。
-   
-   若不知道技能英文名称，可以先在页面中找到对应职业的链接，之后在职业页面中找到相应技能。此处为**Category:Death knight abilities**页面，然后**Death Strike**页面。
-   
-   ![An image](./test/death_strike_1.png)
-   
-   点击上图红圈处进入如下页面。
-   
-   ![An image](./test/death_strike_2.png)
-   
-   点击上图红圈处进入如下页面。
-   
-   ![An image](./test/death_strike_3.png)
+图标反和谐的原理是用自定义的图标来替换游戏内的图标。
 
-   选择**图片另存为**，保存该图片。
+方法如下（以DK的技能**灵界打击**为例）：
 
-2. 将图片文件重命名为技能名称。
+1. 下载原版图标图片。(此处介绍从fandom网站下载图片的方法，也可以从其他途径获取图片)
 
-   ![An image](./test/death_strike_4.png)
+   点击该[链接](https://wowwiki.fandom.com/wiki/)访问fandom网站。
    
-   回到技能图标页面，滚动到**External links**区域。点击红圈位置打开技能详细信息页面。
+   若知道技能英文名称，直接在顶部搜索框中搜索技能的英文名称，如灵界打击为**Death Strike**，之后进入下图所示的技能详情页面。
    
-   ![An image](./test/death_strike_5.png)
+   若不知道技能英文名称，可以先进入相应职业的页面，之后在职业页面中找到相应技能。例如先在Classes分类中找到**Death Knight**，然后在**Death Knight**页面中找到技能。
    
-   红圈处文字即为技能名称。
+   点击下图红圈位置打开**技能图标**。
    
-   ![An image](./test/death_strike_6.png)
+   ![An image](./test/death_strike_detail.png)
+   
+   点击下图红圈位置打开**技能图标原图**。
+   
+   ![An image](./test/death_strike_original.png)
+   
+   点击鼠标右键，选择**图片另存为**，保存该图片。
+   
+   ![An image](./test/save_image.png)
+   
 
-3. 将图标格式转换为blp。
+2. 将图片文件格式转换为blp。(此处介绍用**BLPNG Converter**转换的方法，也可以用其他方式转换)
 
-   用图片格式转换工具**BLPNG Converter**进行转换。
+   打开图片格式转换工具**BLPNG Converter**，将下载的图片拖到红圈位置，转换就会自动开始。
    
-   ![An image](./test/death_strike_7.png)
+   ![An image](./test/blpng.png)
    
-   将下载好的技能图标图片拖到红圈处即可。提示转换完成之后会在与技能图标图片相同的路径下生成技能图标的blp文件。
+   提示转换完成之后会在**与图片相同的路径下**生成blp文件。
 
 
+3. 将blp文件重命名，并放入正确路径。
 
-4. 将转换好的blp文件放入**World of Warcraft/_retail_/Interface/Icons**下。(若没有该路径就手动建立路径)
+   将文件名第一个字母**S**从大写改为小写。例如从**Spell_deathknight_butcher2.blp**改为**spell_deathknight_butcher2.blp**。
+   
+   放入**World of Warcraft/_retail_/Interface/Icons**目录下。(若没有**Icons**文件夹就手动新建文件夹，并命名为**Icons**)
