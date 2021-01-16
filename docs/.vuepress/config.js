@@ -10,6 +10,7 @@ module.exports = {
     sidebar: [
       ['/guide/', '首页'],
       ['/guide/restore', '反和谐'],
+      ['/guide/consumable', '消耗品']
       ['/guide/macro', '宏命令'],
     ],
   },
